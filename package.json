@@ -1,6 +1,6 @@
 {
   "name": "server-models-waterline",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "homepage": "",
   "author": {
@@ -41,7 +41,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "bcrypt": "^0.8.6",
     "moment": "^2.13.0",
     "waterline": "^0.12.1"
   }

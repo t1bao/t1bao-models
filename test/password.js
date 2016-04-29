@@ -21,6 +21,7 @@ describe('password', function () {
   it('should be able to do something before create', function(done) {
     password.beforeCreate(user, function() {
       assert(user.salt !== null);
+      assert(typeof user.salt === 'string');
       assert(password.check(user.password, plain, user.salt));
       done();
     });
