@@ -36,4 +36,37 @@ describe('password', function () {
       done();
     });
   });
+
+  it('should not be able to do something before update because of none object specified', function(done) {
+    var a = null;
+    password.beforeUpdate(a, function() {
+      assert(!a);
+      done();
+    });
+  });
+
+  it('should not be able to do something before update because of none object specified', function(done) {
+    var a = {};
+    password.beforeUpdate(a, function() {
+      assert(!a.password);
+      assert(!a.salt);
+      done();
+    });
+  });
+
+  it('should not be able to do something before update because of none object specified', function(done) {
+    var a = {password: 'sfdosf'};
+    password.beforeUpdate(a, function() {
+      assert(!a.salt);
+      done();
+    });
+  });
+
+  it('should not be able to do something before update because of none object specified', function(done) {
+    var a = {salt: 'sfdosf'};
+    password.beforeUpdate(a, function() {
+      assert(!a.password);
+      done();
+    });
+  });
 });
