@@ -1,11 +1,11 @@
 {
-  "name": "server-models-waterline",
-  "version": "0.0.4",
+  "name": "t1bao-models",
+  "version": "0.0.1",
   "description": "",
   "homepage": "",
   "author": {
-    "name": "renwenxin",
-    "email": "renwenxin@t1bao.com",
+    "name": "calidion",
+    "email": "calidion@gmail.com",
     "url": "www.t1bao.com"
   },
   "files": [
@@ -34,7 +34,7 @@
       "mocha": true
     }
   },
-  "repository": "t1bao/server-models",
+  "repository": "t1bao/t1bao-models",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
