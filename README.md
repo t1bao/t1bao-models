@@ -10,9 +10,8 @@ $ npm install --save t1bao-models
 ## Usage
 
 ```js
-var serverModels = require('t1bao-models');
+var models = require('t1bao-models');
 
-serverModels('Rainbow');
 ```
 ## License
 
