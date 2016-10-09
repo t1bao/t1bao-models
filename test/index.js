@@ -22,7 +22,7 @@ var config = {
   }
 };
 
-describe('server-models', function() {
+describe('t1bao-models', function() {
   it('should have all models!', function(done) {
     var models = ['Administrator',
       'Area',
