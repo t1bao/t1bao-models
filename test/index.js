@@ -40,6 +40,12 @@ describe('t1bao-models', function() {
       'Image',
       'Merchandise',
       'MerchandiseImage',
+      'Merchant',
+      'MerchantContacts',
+      'MerchantExtra',
+      'MerchantFeedback',
+      'MerchantStore',
+      'MerchantVerificationRequest',
       'OAuthUser',
       'Order',
       'Promote',
@@ -72,6 +78,7 @@ describe('t1bao-models', function() {
     }, function(results) {
       for (var k in results) {
         if (typeof k === 'string') {
+          console.log(k);
           assert(models.indexOf(k) !== -1);
         }
       }
